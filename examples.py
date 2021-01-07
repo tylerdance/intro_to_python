@@ -89,4 +89,90 @@ for i in range(len(one_thru_five)):
 my_list = list(['hi', 'i', 'am', 'tyler'])
 for i in range(len(my_list)):
     hi = my_list[i]
-    print(hi)
+    # print(hi)
+
+random_numbers = [45, 88, 4, 17]
+random_numbers.sort()
+
+random_numbers.append(33)
+# print('yuh', random_numbers)
+
+reverse_random_numbers = random_numbers[::-1]
+# print(reverse_random_numbers)
+
+thirty_three = random_numbers.pop()
+# print(thirty_three)
+
+# insert (puts 99 at first index)
+random_numbers.insert(0, 99)
+# print(random_numbers)
+
+# help
+# print(help(my_list))
+
+"""dictionary"""
+car = {
+    "color": 'Red',
+    "make": 'Tesla',
+    "model": "S",
+    "all_colors": ['red', 'white', 'black'],
+    "cool": True,
+    "other_products": {
+        "one": 'model 3',
+        "two": 'cybertruck',
+        "three": 'model s'
+    }
+}
+# print(car["make"])
+car["speed"] = 200
+# print(car)
+# print(car.get('color'))
+# print(car.items())
+# print(car.keys())
+
+"""type conversion"""
+int('33')
+str(33)
+float(33)
+bool(0)
+bool(3)
+
+
+"""string interpolation"""
+# print('hello my name is ' + name)
+# print(f"hello my name is {name}")
+
+phrase = 'this is a phrase {}'
+phrase.format(name)
+# print(phrase)
+
+"""functions"""
+def name(someone):
+    return someone
+
+# print(name('Tyler'))
+
+def old_enough(age):
+    if age < 21:
+        return 'no beans'
+    elif age == 21:
+        return 'big beans'
+    else:
+        return 'spicy'
+# print(old_enough(20))
+
+
+def add(num1, num2):
+    return num1 + num2
+print(add(1, 2))
+
+def subtract(num1, num2):
+    return
+
+def random_function(beans):
+    if beans == 'spiced':
+        return 'spicy'
+    elif beans == 'salted':
+        return 'no spice'
+print(random_function('salted'))
+
